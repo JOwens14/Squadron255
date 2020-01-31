@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Squadron 255</title>
+
+  <script type="text/javascript" src="./Compositor.js"></script>
+  <script type="text/javascript" src="./Controllers.js"></script>
+  <script type="text/javascript" src="./Vector2d.js"></script>
+  <script type="text/javascript" src="./Mouse.js"></script>
+  <script type="text/javascript" src="./Animation.js"></script>
+
+
+
+
+  <script type="text/javascript" src="./Scene.js"></script>
+  <script type="text/javascript" src="./StartScreen.js"></script>
+  <script type="text/javascript" src="./Game.js"></script>
+  <script type="text/javascript" src="./Entity.js"></script>
+  <script type="text/javascript" src="./Player.js"></script>
+  <script type="text/javascript" src="./Shot.js"></script>
+  <script type="text/javascript" src="./Enemy.js"></script>
+  <script type="text/javascript" src="./EnemySpawner.js"></script>
+  <script type="text/javascript" src="./Collider.js"></script>
+  <script type="text/javascript" src="./Explosion.js"></script>
+
+
+
+
+
+  <script type="text/javascript" src="./Traits/Trait.js"></script>
+  <script type="text/javascript" src="./Traits/Velocity.js"></script>
+  <script type="text/javascript" src="./Traits/Shoot.js"></script>
+
+
+  <script type="text/javascript" src="./Controls/KeyboardState.js"></script>
+  <script type="text/javascript" src="./Controls/KeyboardInput.js"></script>
+
+
+
+
+
+  <script type="text/javascript" src="./Layers.js"></script>
+  <script type="text/javascript" src="./Button.js"></script>
+
+
+
+
+  <script type="text/javascript" src="./Timer.js"></script>
+  <script type="text/javascript" src="./Sound.js"></script>
+  <script type="text/javascript" src="./Main.js"></script>
+  <script type="text/javascript" src="./GameOverScreen.js"></script>
+  <script type="text/javascript" src="./Score.js"></script>
+
+
+</head>
+
+<body style="background-color:rgb(255, 255, 255);">
+
+  <style type="text/css">
+  body {
+      overflow:hidden;
+  }
+  </style>
+
+  <style center>
+    canvas {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 100%;    /* can be adjusted for starting width/height */
+
+      position: absolute;
+      /* Vertical and Horizontal center*/
+      left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+
+      cursor: none;
+    }
+  </style>
+
+  <canvas id="gameWorld" tabindex="1" width="1280" height="720"></canvas>
+
+</body>
+
+</html>
