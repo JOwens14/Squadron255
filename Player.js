@@ -25,7 +25,7 @@ class Player extends Entity {
 
         //default position
         this.defaultPosX = WINDOW_WIDTH/2 - (this.width * this.scale) / 2;
-        this.defaultPosY = WINDOW_HEIGHT - (this.height * this.scale) - 10 ;
+        this.defaultPosY = WINDOW_HEIGHT - (this.height * this.scale) - 20 ;
 
         //set player to the default position
         this.pos = new Vector2d(this.defaultPosX, this.defaultPosY);

@@ -56,7 +56,8 @@ window.onload = function() {
   	var ratio = canvas.width/canvas.height;
   	var width = height * ratio;
   	canvas.style.width = width+'px';
-  	canvas.style.height = height+'px';
+    canvas.style.height = height+'px';
+    
   }
   window.addEventListener('load', resize, false);
   window.addEventListener('resize', resize, false);
