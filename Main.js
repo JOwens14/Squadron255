@@ -7,12 +7,13 @@
 const deltaTime = 1/60; //FPS timer --- 1/60 is 60fps
 const masterTimer = new Timer(deltaTime);
 
+//canvas and context
+var CANVAS;
+var CTX;
+
 //Defaults
 var WINDOW_WIDTH = 1280;
 var WINDOW_HEIGHT = 720;
-
-//Context
-var CTX;
 
 //hitbox debug!
 var HITBOXES = false;
@@ -36,6 +37,7 @@ window.onload = function() {
   const context = canvas.getContext('2d');
 
   //set globe context
+  CANVAS = canvas;
   CTX = context;
 
   //gets mouse cords
@@ -49,26 +51,28 @@ window.onload = function() {
 
 
   //------------------------------------start of fullscreen resizing -----------------------------
-  function resize() {
-  	// Our canvas must cover full height of screen regardless of the resolution
-  	var height = window.innerHeight;
-  	// So we need to calculate the proper scaled width that should work well with every resolution
-  	var ratio = canvas.width/canvas.height;
-  	var width = height * ratio;
-  	canvas.style.width = width+'px';
-    canvas.style.height = height+'px';
-    
-  }
+  
+  
   window.addEventListener('load', resize, false);
   window.addEventListener('resize', resize, false);
   //------------------------------------end of fullscreen resizing ------------------------------
 
   //start timer
   masterTimer.start();
-  resize();
   window.focus();
   
+  resize();
   //start the Game
   startScene(canvas, context);
 
+}
+
+function resize() {
+  // Our canvas must cover full height of screen regardless of the resolution
+  var height = window.innerHeight;
+  // So we need to calculate the proper scaled width that should work well with every resolution
+  var ratio = CANVAS.width/CANVAS.height;
+  var width = height * ratio;
+  CANVAS.style.width = width+'px';
+  CANVAS.style.height = height+'px'; 
 }

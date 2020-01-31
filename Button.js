@@ -14,6 +14,8 @@ class Button {
         this.width = this.img.width;
         this.height = this.img.height;
 
+        this.centerPos();
+
 		}
 
     move(x,y) {
@@ -52,8 +54,7 @@ class Button {
 
     update(deltaTime) {
       //hover Highlight for button
-      this.hovered = this.mousedOver();
-      
+      this.hovered = this.mousedOver(); 
     }
 
 

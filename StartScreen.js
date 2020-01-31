@@ -18,9 +18,9 @@ function startScene(canvas, context) {
 
     //start button 
     startButton = new Button('Start_Button');
-    startButton.centerPos();
     startButton.move(startButton.pos.x, startButton.pos.y + 100);
     StartScene.addButton(startButton);
+ 
 
 
     //Timer for the Start Screen
