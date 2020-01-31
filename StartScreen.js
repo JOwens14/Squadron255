@@ -7,7 +7,7 @@ function startScene(canvas, context) {
     //setUpControllers();
 
     //sound
-    mainMusic = new sound('./Sound/MainTheme.wav');
+    mainMusic = new sound('./Sound/Theme.wav');
     mainMusic.sound.volume = .1; //main theme volume
     mainMusic.sound.loop = true; //loops the main theme
 
