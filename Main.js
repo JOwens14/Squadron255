@@ -49,13 +49,8 @@ window.onload = function() {
 
   MOUSE = new Mouse();
 
-
-  //------------------------------------start of fullscreen resizing -----------------------------
-  
-  
   window.addEventListener('load', resize, false);
   window.addEventListener('resize', resize, false);
-  //------------------------------------end of fullscreen resizing ------------------------------
 
   //start timer
   masterTimer.start();

@@ -6,6 +6,7 @@ function startScene(canvas, context) {
 
     //setUpControllers();
 
+
     //sound
     mainMusic = new sound('./Sound/Theme.wav');
     mainMusic.sound.volume = .1; //main theme volume
